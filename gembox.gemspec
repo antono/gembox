@@ -31,7 +31,7 @@ Gem::Specification.new do |s|
       s.add_runtime_dependency(%q<vegas>, [">= 0.1.0"])
       s.add_runtime_dependency(%q<haml>, [">= 2.0.9"])
       s.add_runtime_dependency(%q<rdoc>, ["= 2.4.3"])
-      s.add_runtime_dependency(%q<activesupport>, [">= 2.2.2"])
+      s.add_runtime_dependency(%q<activesupport>, [">= 2.2.2", "< 2.9"])
       s.add_runtime_dependency(%q<will_paginate>, [">= 2.3.12"])
       s.add_development_dependency(%q<newgem>, [">= 1.2.3"])
       s.add_development_dependency(%q<rack-test>, [">= 0.1.0"])

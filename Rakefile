@@ -1,4 +1,4 @@
-%w[rubygems rake rake/clean fileutils newgem rubigen hoe].each { |f| require f }
+%w[rubygems activesupport rake rake/clean fileutils newgem rubigen hoe].each { |f| require f }
 require File.dirname(__FILE__) + '/lib/gembox'
 
 # Generate all the Rake tasks
@@ -16,7 +16,7 @@ $hoe = Hoe.new('gembox', Gembox::VERSION) do |p|
    ['vegas', '>=0.1.0'],
    ['haml', '>=2.0.9'],
    ['rdoc', '=2.4.3'],
-   ['activesupport', '>=2.2.2'],
+   ['activesupport', '>=2.2.2', '< 2.9'],
    ['will_paginate', '>=2.3.7']
   ]
 
