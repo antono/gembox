@@ -2,3 +2,4 @@
 pkg/*
 _site
 _layouts
+*.swp
