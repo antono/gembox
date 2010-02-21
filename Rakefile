@@ -17,14 +17,14 @@ $hoe = Hoe.new('gembox', Gembox::VERSION) do |p|
    ['haml', '>=2.0.9'],
    ['rdoc', '=2.4.3'],
    ['activesupport', '>=2.2.2'],
-   ['mislav-will_paginate', '>=2.3.7']
+   ['will_paginate', '>=2.3.7']
   ]
-  
+
   p.extra_dev_deps = [
     ['newgem', ">= #{::Newgem::VERSION}"],
     ['rack-test', '>=0.1.0']
   ]
-  
+
   p.clean_globs |= %w[**/.DS_Store tmp *.log]
   path = (p.rubyforge_name == p.name) ? p.rubyforge_name : "\#{p.rubyforge_name}/\#{p.name}"
   p.remote_rdoc_dir = File.join(path.gsub(/^#{p.rubyforge_name}\/?/,''), 'rdoc')
